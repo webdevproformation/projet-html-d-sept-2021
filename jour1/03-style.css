@@ -1,0 +1,45 @@
+.container{
+    width:1000px;
+    margin: 0 auto;/*m0-a Emmet pour css*/
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%; /* w100% */
+    margin-bottom: 20px; /* mb20 */
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* main */
+main{
+    display: grid; /* éléments enfants de la balise main doivent comportement de grille : l'un à côté de l'autre
+    si j'arrive au bout d'une ligne => retour à la ligne automatique */
+    grid-template-columns: repeat( 4, 1fr );
+    /* le nombre de colonne de grille 4 colonnes qui ont une largeur 1fr une fraction de la largeur totale
+    1fr 200px 
+    1fr unité qui est relative à la largeur de la balise main ET qui prendre en compte les espaces entre les colonnes */
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+main img{
+    width:100%;
+}
+
+/*footer */
+
+footer{
+    display: flex;
+    align-items: center;
+}
+
+footer form , footer ul{
+    width: 50%;
+}
