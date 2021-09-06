@@ -1,0 +1,17 @@
+/*espacer le bloc header avec la balise main*/
+
+header{
+    padding : 20px 0 ; /*ajoute de la marge intérieure en haut et en bas de 20px à gauche et à droite de 0 px */
+    /* faire en sorte que les liens balise a soient réparties sur toute la largeur de la page ET l'espace entre les liens est égal */
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    /* margin-right: 30px;
+    margin-bottom: 30px; */
+    margin: 0 30px 30px 0 ; /* haut 0px droite 30px en bas 30px gauche 0px dans le sens des aiguilles d'une montre  */
+}
+
+
+
