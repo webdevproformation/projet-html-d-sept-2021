@@ -1,0 +1,11 @@
+.container{
+    width:1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    grid-gap: 20px;
+}
+
+.container article img{
+    width: 100%;
+}
