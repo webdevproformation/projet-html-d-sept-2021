@@ -1,0 +1,20 @@
+/* reset => remise à zéro des mise en forme par défaut du navigateur */
+body{
+    /* police serif => police de caractère avec empattement*/
+    /* police de caractère sans serif => sans empattement */
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none; /*enlever le soulignement automatique des balises a*/
+}
+h1{
+    margin: 0;
+}
+ul{
+    /*enlever les puces et les marges par défaut*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* fin de correction */
