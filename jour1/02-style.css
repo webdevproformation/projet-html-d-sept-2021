@@ -1,0 +1,27 @@
+/*rouge => div qui a la class container*/
+.container{
+    width:960px;
+    margin: 0 auto; /*permet de centrer le design dans la page web*/
+}
+/* dans la balise jaune => je veux que les articles soient l'un à côté de l'autre*/
+header{
+    display: flex;
+    margin-bottom: 20px;
+}
+header article button{
+    /*faire en sorte que les boutons prennent la largeur de l'article (zone bleue)*/
+    width: calc(100% - 10px); /* 300px - 10px = 290px // 900px - 10px = 890px */
+    margin-right: 10px;
+
+    /* 960px container => header => 960px => 3 articles 1 960px / 3 = 320px = 100%
+        320px - 10px = 310px de largeur 
+    */
+}
+/* dans la balise verte => je veux que les img soient l'un à côté de l'autre*/
+main{
+    display: flex;
+}
+main img{
+    width: 50%;
+    margin-right: 10px;
+}
