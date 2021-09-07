@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+            /* align-items: stretch; valeur par défaut */
+            align-items: baseline; /*center / flex-end / flex-start*/
+        }
+
+        div{
+            background: black;
+        }
+        section{
+            display: flex;
+            align-items: center;
+            background: purple;
+            padding: 20px 30px;
+            color:white;
+        }
+        section div {
+            background: purple;
+        }
+        section h1 , section p{
+            margin: 0;
+        }
+        section img{
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="http://via.placeholder.com/120x50" alt="">
+        <h1>Lorem ipsum dolor sit.</h1>
+    </header>
+    <section>
+        <img src="http://via.placeholder.com/120x50" alt="">
+        <div>
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>since 2011</p>
+        </div>
+    </section>
+</body>
+</html>

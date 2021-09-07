@@ -1,0 +1,178 @@
+/*
+4 parties : 
+1 reset => remise à zéro des balises
+2 variable css ?? (gestion de couleurs)
+3 style header
+4 style main
+*/
+
+/*
+1 reset => remise à zéro des balises
+*/
+
+h1, h2, h3 ,p , body{
+    margin: 0;/*externe*/
+}
+ul{
+    margin: 0;
+    padding: 0; /*marge interne*/
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: sans-serif;
+}
+
+/*
+2 variable css ?? 
+palette de couleur => en général la palette de couleur comprend entre 5 et 10 couleurs
+*/
+
+:root{
+    --noir : rgba(0, 0, 0, 0.739); /* variable css */
+    --gris-fonce : rgb(131, 130, 130);
+    --bleu-clair : rgb(0, 217, 255);
+    --vert : rgb(30, 184, 30); 
+    --mauve : rgb(126, 43, 126); 
+}
+
+/*
+3 style header
+*/
+
+.top{
+    display: flex;
+    align-items: baseline;
+    background: var(--noir);
+    padding: 15px;
+}
+
+.top ul {
+    display: flex;
+}
+
+.top form{
+    margin-left: auto;
+}
+
+.top h1{
+    color:white;
+    font-size: 18px;
+    font-weight: normal;
+    margin-right: 15px;
+}
+.top a{
+    color:var(--gris-fonce);
+    margin-right: 10px;
+}
+.top ul li:last-child a{
+    display: flex;
+    align-items: center;
+}
+
+.top ul li:last-child a svg{
+    margin-left: 5px;
+}
+
+.top a.active{
+    color:white;
+}
+
+.top input[type="text"]{
+    padding: 9px;
+    border:2px solid var(--vert);
+    border-radius: 5px;
+}
+
+.top input[type="submit"]{
+    padding: 9px;
+    border:2px solid var(--vert);
+    border-radius: 5px;
+    background: var(--noir);
+    color:var(--vert);
+    cursor: pointer;
+    transition: 1s all; /* transition => effet suite à une action réalisée par l'internaute => :hover */
+}
+.top input[type="submit"]:hover{
+    color:white;
+    border:2px solid white;
+}
+.bottom{
+    background: white;
+    padding: 15px;
+}
+.bottom ul{
+    display: flex;
+}
+.bottom ul li{
+    margin-right: 10px;
+}
+.bottom ul li a{
+    font-size: 14px;
+    color:var(--gris-fonce);
+}
+
+/*
+4 style main
+*/
+body{
+    background: var(--bleu-clair);
+}
+
+main{
+    background: var(--bleu-clair);
+    padding-top: 20px;
+}
+
+main header{
+    width: 70%;
+    margin: 0 auto;
+    background: var(--mauve);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main header img{
+    margin-right: 15px;
+}
+
+main header h2{
+    font-size: 16px;
+    color:white;
+}
+
+main header h3{
+    font-size: 13px;
+    color:var(--gris-fonce);
+}
+main section{
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+}
+main section li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+main section img{
+    border-radius: 5px;
+    margin-right: 10px;
+}
+main section footer{
+    padding: 15px;
+    text-align : right;
+}
+main section h2{
+    padding: 15px;
+    border-bottom: 1px solid var(--gris-fonce);
+}
+main a{
+    font-size: 12px;
+}
