@@ -123,12 +123,11 @@ body{
 
 main{
     background: var(--bleu-clair);
-    padding-top: 20px;
 }
 
 main header{
     width: 70%;
-    margin: 0 auto;
+    margin: 20px auto;
     background: var(--mauve);
     display: flex;
     align-items: center;
