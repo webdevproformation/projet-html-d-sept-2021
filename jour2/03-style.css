@@ -1,0 +1,121 @@
+/*
+Sommaire : 
+1 reset
+2 variable couleur
+3 mise en forme header
+4 mise en forme du main
+*/
+
+/*
+1 reset
+*/
+body, h1, h2, h3, p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: sans-serif;
+}
+
+/*
+2 variable couleur
+https://imageresizer.com/color-picker 
+*/
+
+:root{
+    --bleu : #328FF8;
+    --gris : #D8D8D8; 
+    --gris-fonce : #928C88;
+}
+
+/*
+    3 mise en forme header
+*/
+
+header{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+header ul{
+    margin-left: auto;
+    display: flex;
+}
+
+header ul li{
+    margin-left: 20px;
+}
+
+header ul li a{
+    color: var(--gris-fonce);
+}
+
+header ul li a.last{
+    border: 1px solid var(--bleu);
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+/*
+    4 mise en forme du main
+*/
+main{
+    width: 60%;
+    margin: 40px auto 0 auto;
+    text-align: center;
+}
+
+main p{
+    margin: 30px 0;
+}
+
+main section{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section div{
+    width:30%;
+    border:1px solid var(--gris-fonce);
+    border-radius: 5px;
+}
+
+main section div h2{
+    background: var(--gris);
+    padding: 15px 0;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px ;
+}
+
+main section div h3{
+    padding: 15px 0;
+}
+
+main section div li{
+    font-size: 14px;
+}
+
+main section div a{
+    border:2px solid var(--bleu);
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+    padding: 12px 0;
+    border-radius: 5px;
+    background:  var(--bleu) ;
+    color:white;
+}
+
+main section div a.active{
+    background:  none ;
+    color:var(--bleu);
+}
