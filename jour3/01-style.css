@@ -1,0 +1,134 @@
+/*
+
+1 reset 
+2 variable pour les couleurs (la palette)
+3 mise en forme entête du design 
+4 mise en forme du main 
+    4.1 diaporama
+    4.2 tendances
+
+*/
+
+/*
+1 reset 
+*/
+
+body, h1, h2, h3, p{
+    margin: 0;
+}
+
+ol{
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+
+/*
+2 variable pour les couleurs (la palette)
+https://imageresizer.com/color-picker 
+*/
+
+:root{
+    --rouge : #DC3545;
+    --gris-fonce : #6C757D;
+}
+
+/*
+3 mise en forme entête du design 
+*/
+
+header{
+    display: flex;
+    align-items: center;
+    background: var(--rouge);
+    margin-bottom: 20px;
+    color:white;
+}
+
+header img{
+    margin-left: auto;
+}
+
+header h1{
+    font-size: 16px; 
+    font-weight: normal;
+    margin : 0 20px;
+    padding-right: 20px;
+    border-right:1px solid white; /* ajouter un trait vertical */
+}
+
+
+/*
+4 mise en forme du main 
+*/
+
+main{
+    display: flex;
+}
+main .diaporama{
+    width: calc(70% - 20px);
+    margin-right: 20px; /*mettre en place une gouttière (gutter) en diaporama et news */
+}
+main .news{
+    width:30%;
+}
+
+/*
+4.1 diaporama
+*/
+
+.diapo-principale{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.diapo-principale .diapo-description{
+    background: var(--gris-fonce);
+    padding: 20px;
+    color:white;
+    width:40%;
+}
+
+.diapo-principale img{
+    width:60%;
+}
+
+.diapo-principale .diapo-description h2{
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.diapo-principale .diapo-description p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.diapo-miniatures{
+    display:flex;
+}
+
+.diapo-miniatures .diapo-miniature{
+    width: 20%;
+    margin-right: 10px;
+}
+
+.diapo-miniatures .diapo-miniature:last-child{
+    /* sélectionner la dernière miniature et ne pas mettre de marge externe à droite */
+    margin-right: 0;
+}
+
+.diapo-miniatures .diapo-miniature img{
+    width: 100%;
+}
+
+/*
+4.2 tendances
+*/
+.news h3{
+    margin-bottom: 20px;
+}
+
+.news div{
+    display: flex;
+}
