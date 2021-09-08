@@ -1,0 +1,45 @@
+/*
+ en css réaliser les animations suivantes :
+        pour le h1 changer sa couleur de police en vert // diminuer sa taille de police de 20%
+         le tout en 2s
+         les animations démarrent en même temps et ont la même durée
+        
+        pour l'image augmenter de 20% en 1 seconde puis ajouter une ombre portée en 3 secondes
+         les animations démarrent en même temps et mais n'ont pas la même durée
+
+        pour le p augmenter sa taille de police de 30px puis vous allez ajouter de l'ombre portée sur les lettres en 2 secondes
+        les animations sont exécutées l'unes après l'autres
+
+*/
+
+h1{
+    transition: 2s all;
+     border: 5px solid red; 
+     height: 38px;
+     margin: 22px 0;
+}
+
+h1:hover{
+    color:green;
+    font-size:calc( 32px * 0.8 ); /* la hauteur de la balise h1 dépend de la font-size de la police de caractère */
+}
+
+img{
+    transform-origin: 0 0;
+    transition: 1s transform, 1s margin-bottom , 3s box-shadow ;
+}
+
+img:hover{
+    transform : scale(1.2);
+    box-shadow: 4px 4px 20px green;
+    margin-bottom: 40px;
+}
+
+p{
+    transition: 1s font-size 0s, 3s text-shadow 1s ;
+}
+
+p:hover{
+    font-size: 30px;
+    text-shadow: 2px 2px 2px blueviolet;
+}
