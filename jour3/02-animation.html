@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        en css 3, il est possible d'ajouter des animations sur une ou plusieurs balises html 
+
+        exemples d'animation => changement de couleur d'un titre h1
+        exemples d'animation => une zone du design va se déplacer 
+        exemples d'animation => une zone du design va se disparaitre / apparaitre 
+        
+        attention, il est possible de réaliser des animations complexes en css type jeu vidéo (niveau d'expérience)
+
+        nous allons réaliser des animations simples 
+
+        en css 3 il y a 2 propriétés qui permettent de réaliser une animation 
+
+        transition : permet de créer des animations déclenchées suite à une action de l'internaute suite à une action sur la page
+
+        animation : permet de créer des animations qui sont déclenchées sans action de l'internaute (automatiquement)
+    -->
+    <h1>exemple 1 : changer la couleur d'un texte</h1>
+    <p class="exemple1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, accusamus.</p>
+    <style>
+        /*exemple j'utilise la balise style directement dans la page html 
+        normalement il faut mettre le style dans un fichier .css à part 
+        plus simple d'avoir le html et le css l'un à côte de l'autre
+        */
+        /* etat par défaut le p est rouge par défaut */
+        .exemple1{
+            color : red;
+            transition: 3s color ; 
+        }
+        /* état suite à une action réalisée par l'internaute
+            si l'internaute passe la souris le p alors il devient bleu
+        */
+        .exemple1:hover{
+            color:blue;
+        }
+        /* si vous passez la souris sur le p => rouge => bleu et bleu => rouge en une fraction de seconde 
+        si je passe la souris sur le p => rouge => bleu en 3 seconde Transition 
+        le chamgement de couleur en 1 seconde est effectuée UNIQUEMENT lorsque il y a une action (le passage de souris) par l'internaute
+        */
+    </style>
+    <hr>
+    <h2>exemple 2 : changer l'apparence d'un bouton au passage de souris</h2>
+    <button class="exemple2">Validation</button>
+    <style>
+        /* par défaut bouton bordure noire // fond blanc // texte validation en bleu */
+        .exemple2{
+            border:1px solid black;
+            background: white;
+            color: blue;
+            transition: 3s all;
+        }
+
+        /* au passage de souris sur le bouton bordure rouge // fond rose // texte validation en blanc */
+
+        .exemple2:hover{
+            border:1px solid red;
+            background: pink;
+            color: white;
+        }
+        /* le changement entre TOUTES les propriétés soient effectuées en 3 secondes */
+        /* rdv 10h50 */
+    </style>
+    <hr>
+    <h2>exemple 3 : animation sur un texte multiple</h2>
+    <p class="exemple3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, debitis.</p>
+    <style>
+        .exemple3{
+            display: inline-block;
+            transition: 2s color , 4s font-size ;
+        }
+
+        .exemple3:hover{
+            color:yellow;
+            font-size: 30px;
+        }
+        /*couleur change de noir => jaune = en 2secondes */
+        /* font-size change => 16px = en 4secondes */
+    </style>
+    <hr>
+    <h2>exemple 4 : animation complexe</h2>
+    <img src="http://via.placeholder.com/400x200" alt="" class="exemple4">
+    <style>
+        /* 
+            1 seconde bordure à l'image 
+            PUIS augmenter la taille de l'image 500px  ( après 1seconde ) 
+            PUIS ombre portée sur l'image (après 2 seconde)
+        */
+        img{
+            transform-origin: 0 0;
+            transition: 1s border 0s , 1s transform 1s , 1s box-shadow 2s ;
+        }
+
+        /*delay => retard*/
+        img:hover{
+            border:2px solid red;
+            transform : scale(1.2) ;
+            box-shadow: 2px 2px 3px black;
+        }
+    </style>
+
+    <hr>
+    <div class="navigation">
+        <img src="http://via.placeholder.com/120x50" alt="" class="logo">
+    </div>
+    
+    <style>
+        div{
+            text-align: right;
+        }
+        .logo{
+            transform-origin: 100% 0;
+            transition: 1s border 0s , 1s transform 1s , 1s box-shadow 2s ;
+        }
+        /*delay : retard*/
+        .logo:hover{
+            border: 3px solid green;
+            transform : scale(1.5) ;
+            box-shadow: 2px 2px 3px blue;
+        }
+    </style>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <!--
+        balise en bloc et les balises en ligne ?? 
+        h1 p h2 img a header div .... 
+
+        toutes les balises sont classées en 2 catégories 
+        balise en bloc : h1 h2 ... h6 p div header footer main section form hr
+
+        balise en ligne : img button a input  ... 
+    -->
+
+    <hr>
+    <p class="exemple5">l</p><!-- balise en bloc -->
+    <!-- la largeur d'une balise en block = largeur de son parent body -->
+    <a href="" class="exemple6">u</a> <!-- balise en ligne -->
+    <!-- largeur d'une balise en ligne = largeur de son contenu -->
+    <style>
+        .exemple5{
+            border:2px solid red;
+            transition : 3s font-size;
+        }
+
+        .exemple5:hover{
+            font-size: 30px;
+        }
+
+        .exemple6{
+            border:2px solid purple;
+            transition : 3s font-size;
+        }
+
+        .exemple6:hover{
+            font-size: 30px;
+        }
+    </style>
+</body>
+</html>
