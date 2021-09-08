@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        transition => permet de lancer une animation suite à une action d'un internaute votre page web 
+
+        animation => permet de lancer une animation (automatiquement) sans aucune action de la part d'un visiteur de votre site
+    -->
+
+    <h1>exemple 1 : animation automatique sur un texte</h1>
+    <p class="exemple1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, dicta.</p>
+    <style>
+        .exemple1{
+            animation: 10s changement-couleur ;
+        }
+        /* élément qui a la class exemple1 dispose d'une animation changement-couleur */
+        /* décrire l'animation */
+        @keyframes changement-couleur {
+            0%{
+                color:green;
+            }
+            50%{
+                color:red;
+            }
+            100%{
+                color:blue;
+            }
+        }
+    </style>
+    <hr>
+    <h1>exemple 2 : animation automatique sur un texte à l'infini</h1>
+    <p class="exemple2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, dicta.</p>
+    <style>
+        .exemple2{
+            animation: 5s changement-couleur-2 infinite;
+        }
+        @keyframes changement-couleur-2 {
+            0%{
+                color:green;
+            }
+            50%{
+                color:red;
+            }
+            100%{
+                color:blue;
+            }
+        }
+    </style>
+</body>
+</html>
