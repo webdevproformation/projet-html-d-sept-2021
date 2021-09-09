@@ -47,6 +47,7 @@ body{
     margin: 0 auto;
     padding:0 20px;
     box-sizing: border-box;
+
     /* mon design au maximum il doit avoir comme largeur 1200px 
         si j'ai un écran dont la taille est inférieure à 1200px alors le design = à la largeur de l'écran avec une marge de 20px à gauche et à droite
     */
@@ -58,6 +59,7 @@ body{
 
 header{
     text-align: center;
+    overflow: hidden;
 }
 
 header h1{
@@ -121,10 +123,12 @@ input[type="text"] ,input[type="email"] , textarea {
 }
 
 form div{
+    font-family: serif;
     margin-bottom: 30px;
 }
 
 form p{
+    font-family: serif;
     text-align: center;
     font-weight: bold;
     margin-bottom: 30px;
@@ -148,8 +152,13 @@ input[type="text"] ,input[type="email"] , textarea {
     transition: 2s border-color;
 }
 
-input[type="text"]:hover , input[type="email"]:hover , textarea:hover {
-    border-color: red;
+input[type="text"]:hover , 
+input[type="text"]:focus , 
+input[type="email"]:hover , 
+input[type="email"]:focus , 
+textarea:hover ,
+textarea:focus {
+    border-color: blue;
 }
 
 aside h2{
