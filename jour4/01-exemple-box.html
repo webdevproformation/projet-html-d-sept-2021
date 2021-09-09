@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .exemple1{
+            width:300px;
+            height: 150px;
+            background: yellow;
+            padding:0 20px; 
+            /* largeur = 300px + 20px + 20px = 340px */
+            box-sizing: border-box; /* permet de forcer le padding dans les 300px */
+        }
+        .exemple2{
+            width:300px;
+            height: 150px;
+            background: pink;
+        }
+        input{
+            display: block;
+            width:100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="exemple1">
+        exemple 1
+    </div>
+
+    <div class="exemple2">
+        exemple 2
+        <br>
+        <input type="text">
+    </div>
+
+</body>
+</html>

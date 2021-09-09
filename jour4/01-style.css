@@ -1,0 +1,170 @@
+/*
+1 reset
+2 variables de couleur
+2.1 container 
+3 entête
+   3.1 style
+   3.2 animation
+4 main 
+   4.1 style
+   4.2  animation
+*/
+
+/*
+1 reset
+*/
+
+body, h1, h2 , p{
+    margin: 0;
+} 
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/*
+2 variables de couleur
+*/
+
+:root{
+    /* https://imageresizer.com/color-picker  */
+    --gris : #959A9E; 
+}
+
+/*
+2.1 container 
+*/
+
+.container{
+    width:100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 20px;
+    box-sizing: border-box;
+    /* mon design au maximum il doit avoir comme largeur 1200px 
+        si j'ai un écran dont la taille est inférieure à 1200px alors le design = à la largeur de l'écran avec une marge de 20px à gauche et à droite
+    */
+}
+
+/*
+   3.1 entête style
+*/
+
+header{
+    text-align: center;
+}
+
+header h1{
+    margin: 30px 0 20px 0;
+    font-family: serif;
+}
+
+header p{
+    margin: 20px 0 20px 0;
+    text-transform: uppercase;
+    color:var(--gris);
+    font-size: 12px;
+}
+
+header hr{
+    width: 30px;
+    border-top:3px solid black;
+    margin-bottom: 80px;
+}
+
+/*
+   3.2 entête animation
+*/
+
+header h1{
+    animation: 4s vibration infinite;
+}
+
+@keyframes vibration {
+    50%{
+        transform: scale(1.2);
+    }
+}
+
+
+/*
+   4.1 main  style
+*/
+
+main{
+    display: flex;
+}
+
+main form{
+    width: calc(70% - 40px);
+    margin-right: 40px;
+}
+
+main aside{
+    width: 30%;
+}
+
+input[type="text"] ,input[type="email"] , textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    border:2px solid var(--gris);
+    margin-bottom: 30px;
+    outline: none;
+}
+
+form div{
+    margin-bottom: 30px;
+}
+
+form p{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+form .envoyer{
+    text-align: right;
+}
+
+input[type="submit"]{
+    padding: 10px 30px;
+    border:2px solid black;
+    background: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 80px;
+}
+
+/* animation */
+input[type="text"] ,input[type="email"] , textarea {
+    transition: 2s border-color;
+}
+
+input[type="text"]:hover , input[type="email"]:hover , textarea:hover {
+    border-color: red;
+}
+
+aside h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+aside iframe{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+aside p , aside ul{
+    font-size: 12px;
+    color:var(--gris);
+    margin-bottom: 15px;
+}
