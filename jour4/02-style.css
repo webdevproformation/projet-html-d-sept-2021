@@ -139,9 +139,9 @@ body{
     padding:20px ;
     box-sizing: border-box;
     border-radius: 5px;
-    box-shadow: 2px 2px 8px var(--turquoise) , 
-                -2px 2px 8px var(--turquoise) ,
-                2px -2px 8px var(--turquoise);
+    box-shadow: 2px 2px 8px var(--gris) , 
+                -2px 2px 8px var(--gris) ,
+                2px -2px 8px var(--gris);
 }
 
 .presentation_produit svg{
@@ -169,6 +169,7 @@ body{
     background: var(--turquoise);
     color:white;
     cursor: pointer;
+    font-size: 14px;
 }
 
 /*
