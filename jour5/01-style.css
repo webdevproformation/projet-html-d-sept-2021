@@ -210,9 +210,9 @@ body{
 
 .cv{
     padding: 30px 0;
-    background: url("img/entete.jpg") ;
+    background: url("img/cv.jpg") ;
     background-size: cover;
-    background-position: 0 50%;
+    background-position: 0 80%;
     color:white;
 }
 
