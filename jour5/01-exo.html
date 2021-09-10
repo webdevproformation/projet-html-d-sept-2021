@@ -53,7 +53,7 @@
             </div>
         </section>
         <section class="cv">
-            <div class="container">
+            <div class="container cv-right">
                 <div class="cv_details">
                     <h2 class="cv_titre">John Doe</h2>
                     <h3 class="cv_soustitre">Lorem, ipsum dolor.</h3>
@@ -63,6 +63,7 @@
             </div>
         </section>
         <section class="contact">
+            <div class="container">
             <h2 class="contact_titre">Me contacter</h2>
             <form action="" class="contact_formulaire">
                 <div class="contact_group">
@@ -70,27 +71,29 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                         </svg>
-                        <input type="text" class="contact_input">
+                        <input type="text" class="contact_input" placeholder="votre nom">
                     </span>
                     <span class="contact_control">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                             <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
                         </svg>
-                        <input type="text" class="contact_input">
+                        <input type="text" class="contact_input" placeholder="votre email">
                     </span>
                 </div>
                 <div class="contact_group">
-                    <span class="contact_control">
+                    <span class="contact_control_message">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
                             <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z"/>
                         </svg>
-                        <textarea name="" id="" cols="30" rows="10" class="contact_textarea"></textarea>
+                        <textarea name="" id="" cols="30" rows="10" class="contact_textarea" placeholder="votre message"></textarea>
                     </span>
                 </div>
                 <input type="submit" class="contact_submit">
             </form>
+            </div>
         </section>
         <footer class="pied">
+            <div class="container pied_flex">
             <p class="pied_copyright">Copyright &copy; 2021 by Malik H - <a href="#">exemple.fr</a></p>
             <ul class="pied_social">
                 <li class="pied_social_item"><a href="#">
@@ -115,6 +118,7 @@
                       </svg>
                 </a></li>
             </ul>
+        </div>
         </footer>
 
 </body>
