@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="01-style.css">
+</head>
+<body>
+    
+        <header class="menu">
+            <div class="container">
+                <nav class="menu_nav">
+                    <div class="menu_logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hexagon-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
+                        </svg>
+                        <h1>foliac</h1>
+                    </div>
+                    <ul class="menu_navbar">
+                        <li class="menu_navbar_item"><a href="#">Lorem.</a></li>
+                        <li class="menu_navbar_item"><a href="#">Sed.</a></li>
+                        <li class="menu_navbar_item"><a href="#">Exercitationem!</a></li>
+                        <li class="menu_navbar_item"><a href="#">Enim.</a></li>
+                    </ul>
+                </nav>
+                <div class="menu_infos">
+                    <h2 class="menu_title">Lorem ipsum dolor sit amet.</h2>
+                    <p class="menu_title_description">Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="#" class="menu_more">mes travaux</a>
+                    <!-- # dans l'attribut href de la balise a permet de ne pas avoir de message d'erreur si validation w3c
+                    hashtag => ancre 
+                    -->
+                </div>
+            </div>
+        </header>
+        <section class="projets">
+            <div class="container">
+                <ul class="projets_menu">
+                    <li class="projets_menu_item active"><a href="">Lorem.</a></li>
+                    <li class="projets_menu_item"><a href="">Delectus!</a></li>
+                    <li class="projets_menu_item"><a href="">Ducimus!</a></li>
+                    <li class="projets_menu_item"><a href="">Doloribus?</a></li>
+                    <li class="projets_menu_item"><a href="">Reiciendis.</a></li>
+                </ul>
+                <figure class="projets_galerie">
+                    <img src="http://via.placeholder.com/400x300" alt="" class="projets_img img1">
+                    <img src="http://via.placeholder.com/400x300" alt="" class="projets_img img2">
+                    <img src="http://via.placeholder.com/400x300" alt="" class="projets_img img3">
+                    <img src="http://via.placeholder.com/400x300" alt="" class="projets_img img4">
+                </figure>
+            </div>
+        </section>
+        <section class="cv">
+            <div class="container">
+                <div class="cv_details">
+                    <h2 class="cv_titre">John Doe</h2>
+                    <h3 class="cv_soustitre">Lorem, ipsum dolor.</h3>
+                    <p class="cv_p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, voluptatum. Fuga, quisquam deleniti quidem dolores necessitatibus sapiente nihil eveniet? Vero, nobis soluta! Cupiditate iste dolorum dignissimos quasi harum quidem repellat impedit voluptas velit corrupti sint soluta consequuntur necessitatibus debitis odio praesentium, obcaecati itaque sequi similique atque in veritatis inventore omnis!</p>
+                    <a href="#" class="cv_link">Me contacter</a>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h2 class="contact_titre">Me contacter</h2>
+            <form action="" class="contact_formulaire">
+                <div class="contact_group">
+                    <span class="contact_control">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                        <input type="text" class="contact_input">
+                    </span>
+                    <span class="contact_control">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                        </svg>
+                        <input type="text" class="contact_input">
+                    </span>
+                </div>
+                <div class="contact_group">
+                    <span class="contact_control">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
+                            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z"/>
+                        </svg>
+                        <textarea name="" id="" cols="30" rows="10" class="contact_textarea"></textarea>
+                    </span>
+                </div>
+                <input type="submit" class="contact_submit">
+            </form>
+        </section>
+        <footer class="pied">
+            <p class="pied_copyright">Copyright &copy; 2021 by Malik H - <a href="#">exemple.fr</a></p>
+            <ul class="pied_social">
+                <li class="pied_social_item"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                      </svg>
+                </a></li>
+                <li class="pied_social_item"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
+                        <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+                      </svg>
+                </a></li>
+                <li class="pied_social_item"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reddit" viewBox="0 0 16 16">
+                        <path d="M6.167 8a.831.831 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661zm1.843 3.647c.315 0 1.403-.038 1.976-.611a.232.232 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83.458 0 .83-.381.83-.83a.831.831 0 0 0-1.66 0z"/>
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.203.203 0 0 0-.153.028.186.186 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224c-.02.115-.029.23-.029.353 0 1.795 2.091 3.256 4.669 3.256 2.577 0 4.668-1.451 4.668-3.256 0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165z"/>
+                      </svg>
+                </a></li>
+                <li class="pied_social_item"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                      </svg>
+                </a></li>
+            </ul>
+        </footer>
+
+</body>
+</html>
+<!-- fin HTML et BEM => Block Element Modifier -->

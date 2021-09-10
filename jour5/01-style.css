@@ -1,0 +1,140 @@
+/*
+Sommaire :
+1 reset
+2 variables (couleurs)
+3 container
+4 style entete
+5 style projets
+6 style cv
+7 style contact
+8 style pied
+*/
+
+/*
+1 reset
+*/
+
+body, h1  , h2, h3, p, figure{
+    margin: 0;
+} 
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: sans-serif; /* hérité pour ses enfants */
+}
+
+/*
+2 variables (couleurs) 5 couleurs dans la palette
+*/
+:root{
+     /* https://imageresizer.com/color-picker  */
+     --vert : #4ABE73;
+     --bleu-marine : #3D4955;
+     --bleu-clair : #F9F9F9;
+     --bleu : #707982;
+     --gris-clair : #EAEAEA;
+}
+
+/*
+3 container
+*/
+
+.container{
+    width: 100%;
+    max-width :900px;
+    margin: 0 auto;
+}
+
+/*
+
+4 style entete
+
+*/
+
+.menu{
+    background: url("img/entete.jpg") ;
+    background-size: cover;
+    background-position: 0 50%;
+    padding: 60px 0 100px 0;
+}
+
+.menu_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu_logo svg{
+    color:var(--vert);
+    width: 40px;
+    height: 40px;
+}
+
+.menu h1{
+    color:white;
+    margin-left: 10px;
+}
+
+
+.menu_navbar{
+    display: flex;
+}
+
+.menu_navbar_item{
+    margin-left: 10px;
+}
+
+.menu_navbar_item a {
+    color:white;
+    font-size: 14px;
+    padding-left:10px;
+}
+/* barre / entre chaque élément du menu */
+.menu_navbar_item a::before{
+    content:"";
+    transform:skewX(-20deg);
+    display: inline-block;
+    width:1px;
+    height:12px;
+    background: white;
+    margin-right: 20px;
+}
+
+.menu_navbar_item:first-child a::before{
+    display: none;
+}
+
+.menu_infos{
+    text-align: center;
+}
+
+.menu_title {
+    margin: 40px 0 20px 0;
+    color:white;
+    text-transform: uppercase;
+}
+
+.menu_title_description{
+    margin: 20px 0 20px 0;
+    color:white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.menu_more{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--vert);
+    border:2px solid var(--vert);
+    font-size: 13px;
+}
