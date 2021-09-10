@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .exemple1{
+            border: 3px solid blue;
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            border:3px solid pink;
+        }
+        .exemple2{
+            border: 3px solid red;
+            text-align: center;
+        }
+        a{
+            border:3px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="exemple1"> <!--  element en block qui contient un élément en block 
+            et je veux aligner le h1 dans la div -->
+        <h1>texte</h1>
+    </div>
+
+    <div class="exemple2"> <!--  element en block qui contient un élément en block -->
+        <a href="">lien</a>
+    </div>
+
+
+    <style>
+        main{
+        }
+        ul{
+            display: flex;
+            justify-content: center; 
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .f{
+            border:2px solid purple ;
+            width: calc(200px * 2 + 20px);
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .img1 , .img2{
+            margin-right: 20px;
+        }
+    </style>
+    <main>
+        <ul>
+            <li>Lorem, ipsum.</li>
+            <li>Doloremque, tempore.</li>
+            <li>Repudiandae, corrupti.</li>
+        </ul>
+        <figure class="f">
+                <img src="http://via.placeholder.com/200x300" alt="" class="img1">
+                <img src="http://via.placeholder.com/200x300" alt="">
+                <img src="http://via.placeholder.com/200x300" alt="" class="img2">
+                <img src="http://via.placeholder.com/200x300" alt="">
+        </figure>
+    </main>
+    <style>
+        figure{
+            border:2px solid green;
+        }
+    </style>
+   <figure> <!-- elément en block 14h00 rappels !! -->
+    <p>o</p>
+   </figure>
+    
+   
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            border:2px solid red;
+        }
+        section{
+            border:2px solid yellow;
+        }
+        article{
+            border:2px solid green;
+        }
+        h4{
+            border:2px solid blue;
+            width:100px; /* lui donner une largeur */
+            /* margin-left:  auto;
+            margin-right:  auto; */
+            margin:0 auto; /* lui donner une marge à droite = marge à gauche */
+        }
+    </style>
+    <!-- centrer la balise h4  dans la page 
+        centrer la balise h4 dans la balise dans la balise body  -->
+
+    <section  class="container"><!--  parent de div -->
+        <article> <!--  parent de h4 -->
+            <h4>Lorem, ipsum.</h4>
+        </article>
+    </section>
+
+    <style>
+        nav{
+            border:3px solid pink;
+        }
+        ul{
+            border:3px solid blue;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        li{
+            border:3px solid green;
+        }
+    </style>
+
+    <nav>
+        <ul>
+            <li>lorem texte en plus </li>
+            <li>lorem</li>
+            <li>lorem</li>
+        </ul>
+    </nav>
+
+    <style>
+            section{
+
+            }
+            h2{
+                text-align: center;
+            }
+            /*texte soit centré ET qu'il prenne 50% de largeur du parent de section */
+    </style>
+    <section>
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, unde.</h2>
+    </section>
+
+    3 techniques pour centrer une balise dans une autre : 
+
+    text-align: center;
+
+    width: valeur - px / % / em ;
+    margin:0 auto;
+
+    parent
+        display flex
+        justify-content center 
+
+    
+
+    hauteur => je n'utilise quasi jamais la propriété height 
+    
+        le contenu de la b alise qui va déterminer la hauteur de la balise 
+        espacement padding / margin 
+
+
+</body>
+</html>

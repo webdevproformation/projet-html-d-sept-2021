@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+        body{
+            border:2px solid red;
+            width:700px; 
+        }
+        section{
+            border:2px solid yellow;
+            width:50%;
+        }
+        article{
+            border:2px solid green;
+            width:50%;
+        }
+        h4{
+            border:2px solid blue;
+            /* quelle la largeur de h4 ?? 
+            section = 1/2 body  => 350px 
+            article = 1/2 section = 1/4 body => 125px
+            h4 = 1/4 body => 125px
+            */
+        }
+    </style>
+
+    <section  class="container"><!--  parent de div -->
+        <article> <!--  parent de h4 -->
+            <h4>Lorem, ipsum.</h4>
+        </article>
+    </section>
+</body>
+</html>

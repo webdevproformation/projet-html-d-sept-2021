@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .galerie1{
+            width:50%;
+        }
+        img{
+            width: 100%;
+        }
+        .galerie2{
+            display: flex;
+            flex-wrap: wrap;
+            width:50%;
+            margin: 0 auto;
+        }
+        .img1{
+            width: calc(40% - 20px);
+            margin-right: 20px;
+            margin-bottom: 20px;
+            height: 70%;
+        }
+        .img2{
+            width:60%;
+            margin-bottom: 20px;
+        }
+        .img3{
+            width: calc(40% - 20px);
+            margin-right: 20px;
+            margin-top: -60px;
+        }
+        .img4{
+            width:60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="galerie1">
+        <img src="fond.jpg" alt="">
+    </div>
+   
+    <div class="galerie2">
+        <img src="fond.jpg" alt="" class="img1">
+        <img src="fond.jpg" alt="" class="img2">
+        <img src="fond.jpg" alt="" class="img3">
+        <img src="fond.jpg" alt="" class="img4">
+    </div>
+
+</body>
+</html>
